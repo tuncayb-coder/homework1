@@ -1,0 +1,67 @@
+def greet_with_message(Username = "Memmedeli", message="Hello"):
+    print(f"{message}, {Username}!")
+greet_with_message()
+      
+      original_price = 300
+discount_rate = 40
+      
+def calculate_discount():
+    discounted_price =original_price- (original_price* discount_rate/100)
+    print(discounted_price)
+calculate_discount()
+
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(2,5,6,7))
+print(sum_all(7,4,5,8))
+  
+  def calculate_product(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return (result)
+
+print(calculate_product(3,5,6))
+print(calculate_product(9,3,5))
+  def sum_of_numbers(*numbers):
+    return sum(numbers)
+
+print(sum_of_numbers(6,2,13))
+print(sum_of_numbers(99,4))
+  
+  def calculate_power():
+    base = 4
+    exponent = 2 
+    power = base**exponent
+    print (power)
+calculate_power()
+
+def greet_user(*args):
+ for name in args:
+  print(f"Hello, {name}")
+greet_user("Tuncay")
+
+def calculate_area():
+    radius = 5
+    area = radius**2
+    print(area)
+calculate_area()
+
+def average_number():
+    numbers = [3,5,6,7,2,6]
+    average = sum(numbers) / len(numbers)
+    print(average)
+average_number()
+
+def maximum_number():
+    numbers = [3,6,13,4,7]
+    maximum = max(numbers)
+    print(maximum)
+maximum_number()
+
+def greet_with_salutation(*args):
+    for salutation, name in args:
+        print(f"Hello, {salutation} {name}")
+
+greet_with_salutation(( "Mr", "Tuncay"))
